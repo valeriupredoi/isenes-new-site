@@ -1,4 +1,5 @@
-# isenes-new-site
+# Some notes on building a Jekyll-based website:
+# Technical Aspects
 
 ## 1. Install Jekyll
 
@@ -76,9 +77,14 @@ gem 'asciidoctor', '~> 1.5.4'
 gem 'coderay', '1.1.1'
 ```
 
-## 5. Toy website (valeriupredoi pages, lost of Porsches)
+## 5. Toy website (valeriupredoi pages, lots of Porsche 956C and 962C)
 
-This is a sandbox (toy) website: https://valeriupredoi.github.io/
+This is a sandbox (toy) [website](https://valeriupredoi.github.io/) built by me, with a 
+Feeling Responsive base, see the modified [source](https://github.com/valeriupredoi/valeriupredoi.github.io).
+
+The Feeling Responsive base template can be forked or gitballed from its [source](https://github.com/Phlow/feeling-responsive)
+and set up for the ISENES3 website needs.
+
 
 ## 6. Building Jekyll from Docker
 
