@@ -1,4 +1,4 @@
-# Some notes on building a Jekyll-based website:
+# <span style="color:pink">Some notes on building a Jekyll-based website:</span>
 # Technical Aspects
 
 ## 1. Install Jekyll
