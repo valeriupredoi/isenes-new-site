@@ -3,19 +3,19 @@
 
 ## 1. Install Jekyll
 
-See [installation instructions](https://jekyllrb.com/docs/installation/):
+See [installation instructions](https://jekyllrb.com/docs/installation/) for multiple OS's:
 
 - Specifically, on Ubuntu:
 
 Make sure Ruby>2.4 is installed, eg on an older Ubuntu 18.04 update the PPA:
 
-```
+```bash
 sudo apt-add-repository ppa:brightbox/ruby-ng && sudo apt-get update
 sudo apt-get install ruby2.5 ruby2.5-dev
 ```
 then install `jekyll` and `bundler`:
 
-```
+```bash
 sudo apt-get install ruby-full build-essential zlib1g-dev  # don't install ruby if you already did
 echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
 echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
@@ -30,7 +30,7 @@ You can check if it works with `jekyll --version`
 
 You may have an older version of `bundler` (incompatible), to upgrade it run:
 
-```
+```bash
 gem install bundler:1.17.1
 ```
 
@@ -40,13 +40,13 @@ and check version with `bundle --version`
 
 Install the dependencies with
 
-```
+```bash
 bundle install
 ```
 
 then you can now build the site with
 
-```
+```bash
 bundle exec jekyll build
 ```
 
@@ -55,7 +55,7 @@ bundle exec jekyll build
 For instance, if you decide to use a new gem, e.g. `jekyll-seo-tag` you can install it
 in your gems environment with:
 
-```
+```bash
 gem install jekyll-seo-tag
 ```
 
