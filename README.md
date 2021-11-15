@@ -38,7 +38,19 @@ and check version with `bundle --version`
 
 ## 3. Install dependencies and build the site
 
-Install the dependencies with
+Once you have a website repository, initiate the jekyll-ification with:
+
+```bash
+jekyll new my-site-repo
+```
+
+then
+
+```bash
+cd my-site-repo
+```
+
+and install the dependencies with
 
 ```bash
 bundle install
