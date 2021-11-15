@@ -1,12 +1,12 @@
 # isenes-new-site
 
-## Install Jekyll
+## 1. Install Jekyll
 
 See [installation instructions](https://jekyllrb.com/docs/installation/):
 
 - Specifically, on Ubuntu:
 
-Mae sure Ruby>2.4 is installed, eg on an older Ubuntu 18.04 update the PPA:
+Make sure Ruby>2.4 is installed, eg on an older Ubuntu 18.04 update the PPA:
 
 ```
 sudo apt-add-repository ppa:brightbox/ruby-ng && sudo apt-get update
@@ -25,7 +25,7 @@ gem install jekyll bundler
 
 You can check if it works with `jekyll --version`
 
-## Note on `bundler`
+## 2. Note on `bundler`
 
 You may have an older version of `bundler` (incompatible), to upgrade it run:
 
@@ -35,7 +35,7 @@ gem install bundler:1.17.1
 
 and check version with `bundle --version`
 
-## Install dependencies and build the site
+## 3. Install dependencies and build the site
 
 Install the dependencies with
 
@@ -49,9 +49,40 @@ then you can now build the site with
 bundle exec jekyll build
 ```
 
-## Building Jekyll from Docker
+## 4. Installing missing gems
 
-**NOTE**: I had issues with permissions with this installation!
+For instance, if you decide to use a new gem, e.g. `jekyll-seo-tag` you can install it
+in your gems environment with:
+
+```
+gem install jekyll-seo-tag
+```
+
+and remember to include it in the Gemfile, like here, `vim Gemfile`:
+
+```
+source 'https://rubygems.org'
+
+gem 'jekyll'
+
+group :jekyll_plugins do
+  gem 'jekyll-gist'
+  gem 'jekyll-paginate'
+  gem "jekyll-asciidoc"
+  gem "jekyll-seo-tag"
+end
+
+gem 'asciidoctor', '~> 1.5.4'
+gem 'coderay', '1.1.1'
+```
+
+## 5. Toy website (valeriupredoi pages, lost of Porsches)
+
+This is a sandbox (toy) website: https://valeriupredoi.github.io/
+
+## 6. Building Jekyll from Docker
+
+**WARNING**: I had issues with permissions with this type of installation!
 
 Use the Jekyll [container](https://github.com/envygeeks/jekyll-docker/blob/master/README.md) and
 specifically, run:
