@@ -23,7 +23,31 @@ source ~/.bashrc
 gem install jekyll bundler
 ```
 
+You can check if it works with `jekyll --version`
 
+## Note on `bundler`
+
+You may have an older version of `bundler` (incompatible), to upgrade it run:
+
+```
+gem install bundler:1.17.1
+```
+
+and check version with `bundle --version`
+
+## Install dependencies and build the site
+
+Install the dependencies with
+
+```
+bundle install
+```
+
+then you can now build the site with
+
+```
+bundle exec jekyll build
+```
 
 ## Building Jekyll from Docker
 
